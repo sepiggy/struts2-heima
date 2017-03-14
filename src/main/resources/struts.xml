@@ -3,4 +3,10 @@
 	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
-<struts></struts>
+<struts>
+	<package name="sepiggy" namespace="/test" extends="struts-default">
+		<action name="helloworld" class="io.github.sepiggy.action.HelloWorldAction" method="execute">
+			<result name="success">/WEB-INF/page/hello.jsp</result>
+		</action>
+	</package>
+</struts>
